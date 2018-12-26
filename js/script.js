@@ -1,5 +1,4 @@
 
-
 obtenerVideos(9, '')
 
 function obtenerVideos (mostrar, buscar) {
@@ -12,10 +11,10 @@ function obtenerVideos (mostrar, buscar) {
             let cadena = ''
             for (const item of res.items) {
                 cadena += `
-                    <div class="card col-4 border-danger ">
+                    <div id="estilocard" class="card col-lg-4 col-12 border-White">
                             <img class="card-img-top" src="` + item.snippet.thumbnails.default.url + `" alt="Card image cap">
-                            <div class="card-block d-flex align-content-between flex-wrap">
-                                <h7 class="card-title text- pointer">` + item.snippet.title + `</h7>
+                            <div class="card-block d-flex align-content-between flex-wrap ">
+                                <h7 class="card-title text- pointer ">` + item.snippet.title + `</h7>
                                
                                 <a href="#" class="btn btn-danger" onclick="reproducirVideo('` + item.id.videoId + `')">Reproducir</a>
                             </div>

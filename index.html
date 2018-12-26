@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,79 +21,68 @@
 
     <title>Mi Youtube</title>
     <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-        .logo span{
-            font-size: 1.5em;
-        }
 
-Body{background-image:url(fondo.jpg);
+        Body{background-image:url(fondo.jpg);
 			 background-repeat: no-repeat; 
 			/* background-size: cover; */
 			background-position: center;}
 		
 
+     #estilocard{
+  padding: 3px 10px;
+  border: white 5px solid;
+  border-radius: 20px;
+}
 
     </style>
+
 </head>
 
 <body>
-    <div class="container ">
-        <!-- Start Header-->
-        <header class="row pt-3 pb-3">
-            <div class="col-3 logo">
-                <img src="logorofai.png" height="43px"> <span class="ml-2 text-white font-weight-bold">MI Youtube</span>
-            </div>
-            <div class="col-6">
-                <div class="input-group">
-                    <input id="buscar" type="text" class="form-control" placeholder="Buscar ..." aria-label="Recipient's username"
-                        aria-describedby="button-addon2" onkeypress="buscarVideo(event, true)">
-                    <div class="input-group-append">
-                        <button class="btn btn-light" type="button" id="button-addon2" onclick="buscarVideo(event, false)">
-                            <i class="fas fa-search"></i>
-                        </button>
+    <div class="col-lg-7 col-md-6 col-sm-4 col-12">
+        <div class="container ">
+            <!-- Start Header-->
+            <header class="row pt-3 pb-3">
+                <div class="col-6 logo">
+                    <img src="logorofai.png" height="43px"> <span class=" ml-2 text-white font-weight-bold">Youtube</span>
+                </div>
+                <div class="col-6">
+                    <div class="input-group justify-content-center">
+                        <input id="buscar" type="text" class="form-control" placeholder="Buscar ..." aria-label="Recipient's username"
+                            aria-describedby="button-addon2" onkeypress="buscarVideo(event, true)">
+                        <div class="input-group-append">
+                            <button class="btn btn-light" type="button" id="button-addon2" onclick="buscarVideo(event, false)">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-3 ">
-
-            </div>
-        </header>
-        <!-- End Header-->
-        <!-- Start Section-->
-        <section class="row pt-3 pb-3" id="card-video">
-        </section>
-        <!-- End Section-->
+            </header>
+            <!-- End Header-->
+            <!-- Start Section-->
+            <section class="row pt-3 pb-3" id="card-video">
+            </section>
+            <!-- End Section-->
+        </div>
     </div>
-    <div class="row d-flex justify-content-center">
-
+    <div class="d-flex justify-content-center">
         <!-- Start Section-->
-        <div  class="card col-7 m-4">
-            <div class="card-body">
-                <iframe id="video-play" width="100%" height="315" src="https://www.youtube.com/embed/riNTLAHnAnU"
-                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+        <div class="col-lg-8 col-md-6 col-sm-4 col-12">
+            <div class="card col-12 mb-4">
+                <div class="card-body col-12">
+                    <iframe id="video-play" width="100%" height="315" src="https://www.youtube.com/embed/riNTLAHnAnU"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- End Section-->
+
+            <div class=" col-lg-12 col-12  d-flex justify-content-center">
+                <div id="card2-video" class="row col-12 col-10">
+                </div>
             </div>
         </div>
-        <!-- End Section-->
     </div>
-    <div class="">
-            <div id="card2-video" class="carousel-inner row w-50 mx-auto" >
-            </div>
-        </div>
-
-
-
-
-    </div>
-
-
-
-
-
-
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -103,7 +94,7 @@ Body{background-image:url(fondo.jpg);
         crossorigin="anonymous"></script>
 
     <!-- Script -->
-    <script src="assets/js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
