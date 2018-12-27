@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+
+
     <link rel="stylesheet" href="/sites/computerhoy.com/public/css/css_68wqDz2Wm2Fb3BbKSgNFmyxgV7_j_nddEiHhepzT9Mc.css?pk0y3f"
         media="all">
 
@@ -68,20 +70,20 @@
     </div>
     <!-- Pagina-->
     <div class=" container">
-        <!--reproductor de  videos-->
+        <!--anuncios-->
         <div class="row">
             <div class="col-lg-2">
-                    
-                            <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/250px-Boostrap_logo.svg.png" alt="Card image cap">
-                            <div class="">
-                              <h6 class="card-title text-white text-center">bootstrap</h6>
-                              <p class="card-text text-white">Estilos bootstrap e interactividad con jquery</p>
-                              <p class="card text"><span class="badge badge-light">Bootstrap</span></p>
-                            </div>
-                           
-                          
+                <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Boostrap_logo.svg/250px-Boostrap_logo.svg.png"
+                    alt="Card image cap">
+                <div class="">
+                    <h6 class="card-title text-white text-center">bootstrap</h6>
+                    <p class="card-text text-white">Estilos bootstrap e interactividad con jquery</p>
+                    <p class="card text"><span class="badge badge-light">Bootstrap</span></p>
+                </div>
+
+
             </div>
-            
+ <!--reproductor de  videos-->
             <div class="card col-lg-8  col-12 mb-4">
                 <div class="card-body col-12">
                     <iframe id="video-play" width="100%" height="315" src="https://www.youtube.com/embed/riNTLAHnAnU"
@@ -90,7 +92,7 @@
                 </div>
             </div>
             <div class=" col-lg-2">
-                
+
             </div>
         </div>
         <!-- card de videos-->
@@ -107,42 +109,46 @@
     <div class="row bg-dark">
         <div class="col-lg-4 col-4">
             <a class="text-white">Informacion</a>
-           
-            <ul >
+
+            <ul>
                 <li><a class="text-white" href="/tecnologia">Nosotros</a></li>
                 <li><a class="text-white" href="/entretenimiento">Vision</a></li>
                 <li><a class="text-white" href="/gaming">Mision</a></li>
-                <li><a class="text-white" href="/life">Logros</a></li>        
+                <li><a class="text-white" href="/life">Logros</a></li>
             </ul>
         </div>
-        
-        
-    
-    
+        <div class="col-lg-4 col-4">
+     <a class="text-white">Compartir</a>
+     <a href="google.com" onclick="google()" id="iraGoogle">Google</a>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-
-    <!-- Script -->
-    <script src="js/script.js"></script>
+</div>
 
 
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131416612-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        //Seleccionamos el elemento y ejecutamos el evento click
+        $("#iraGoogle").google();
+      </script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 
-  gtag('config', 'UA-131416612-1');
-</script>
+        <!-- Script -->
+        <script src="js/script.js"></script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131416612-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-131416612-1');
+        </script>
 
 </body>
 
