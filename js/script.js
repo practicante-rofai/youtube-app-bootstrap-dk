@@ -2,7 +2,6 @@
 obtenerVideos(9, '')
 
 function obtenerVideos (mostrar, buscar) {
-    let cardVideo = $('#card-video');
     let carouselVideo = $('#card2-video');
     
     $.ajax({
@@ -11,7 +10,7 @@ function obtenerVideos (mostrar, buscar) {
             let cadena = ''
             for (const item of res.items) {
                 cadena += `
-                    <div id="estilocard" class="card col-lg-4 col-8 mb-4  border-White">
+                    <div id="estilocard" class="card col-lg-4 col-12 col-md-8 mb-4  border-White text-center">
                             <img class="card-img-top" src="` + item.snippet.thumbnails.default.url + `" alt="Card image cap">
                             <div class="card-block d-flex align-content-between flex-wrap ">
                                 <h7 class="card-title text- pointer ">` + item.snippet.title + `</h7>
